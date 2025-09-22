@@ -1,0 +1,35 @@
+// Utilities
+@use 'utilities' as *;
+
+// ***********************************
+
+// Hero Area Style
+
+#hero_area {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Img/gym-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  .hero_details {
+    h1 {
+      width: 60%;
+      margin-bottom: 10px;
+      font: {
+        size: 60px;
+      }
+    }
+    p {
+      margin-bottom: 40px;
+      width: 40%;
+      font: {
+        weight: 300;
+        size: 14px;
+      }
+    }
+  }
+}

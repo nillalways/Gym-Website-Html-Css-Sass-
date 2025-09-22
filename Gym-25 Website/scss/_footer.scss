@@ -1,0 +1,39 @@
+// Utilities
+@use 'utilities' as *;
+
+// *********************************
+
+// Footer Area Style
+#footer_area {
+  margin: 0 auto;
+  p {
+    margin: 10px 0;
+    i {
+      margin-right: 8px;
+      color: $lemonYellow;
+    }
+  }
+  .left {
+    flex-basis: 33%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .center {
+    flex-basis: 33%;
+    h2 {
+      color: $lemonYellow;
+    }
+  }
+  .right {
+    flex-basis: 33%;
+    h2 {
+      color: $lemonYellow;
+    }
+    .icon {
+      margin-right: 4px;
+      gap: 10px;
+      text-align: left;
+      display: flex;
+    }
+  }
+}

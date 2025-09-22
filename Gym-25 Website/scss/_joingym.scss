@@ -1,0 +1,52 @@
+// Utilities
+@use 'utilities' as *;
+
+// *************************************************
+
+// Join Gym Area Style
+
+#join_area_gym {
+  background: $blackColor;
+  padding: 0 2%;
+  .sub-title {
+    width: 29%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 0 auto;
+    border-bottom: 1px solid $lemonYellow;
+    border-top: 1px solid $lemonYellow;
+  }
+  .inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .child_join {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-basis: 40%;
+    margin-top: 40px;
+    img {
+      width: 30px;
+      height: auto;
+      flex-shrink: 0;
+      margin-right: 5px;
+      margin-right: 20px;
+    }
+    .join_datiles {
+      width: 50%;
+      h2 {
+        font: {
+          size: 22px;
+        }
+      }
+      p {
+        font: {
+          size: 14px;
+        }
+      }
+    }
+  }
+}

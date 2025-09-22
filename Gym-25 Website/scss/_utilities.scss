@@ -1,0 +1,130 @@
+// ?color
+
+//* Color gym-25
+$blackColor: #000000;
+$blackColor200: #292e36;
+
+//* white Color
+$whiteColor: #ffffff;
+
+//* Yellow color
+$lemonYellow: #faff00;
+
+// Font Family
+$pFontFamely: 'Poppins', sans-serif;
+$srcFontFamely: 'Fondamento', cursive;
+
+// Font weght Poopins
+$fontWeght400: 400;
+$fontWeght500: 500;
+$fontWeght600: 500;
+$fontWeght700: 500;
+$fontWeght800: 500;
+
+$boxShadow: 0 4px 10px -2px rgba(255, 255, 255, 0.5);
+
+body {
+  font-family: $pFontFamely;
+  line-height: 1.5em;
+  background: $blackColor;
+  color: $whiteColor;
+  font: {
+    size: 15px;
+    weight: $fontWeght400;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5em;
+  font: {
+    size: 18px;
+    weight: $fontWeght600;
+  }
+}
+
+p {
+  line-height: 1.2em;
+  font: {
+    size: 14px;
+    weight: $fontWeght600;
+  }
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+
+  //* Phone responcive
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    width: 96%;
+  }
+  //* Tablet Responcive
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 96%;
+  }
+  //* Laptop Responcive
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: 96%;
+  }
+}
+
+// btn-cta style
+.btn-cta {
+  background: $lemonYellow;
+  padding: 9px 18px;
+  margin: 15px 0;
+  border-radius: 30px;
+  text-decoration: none;
+  color: $blackColor;
+  transition: 0.5s;
+  font: {
+    weight: $fontWeght800;
+  }
+  &:hover {
+    box-shadow: $boxShadow;
+  }
+}
+
+// paddingXl style
+
+.paddingXl {
+  padding: 60px 0;
+  @media only screen and (min-width: 200px) and (max-width: 767px) {
+    padding: 25px 0;
+  }
+}
+
+// M Top Style
+.m-top {
+  margin-top: 45px;
+  @media only screen and (min-width: 200px) and (max-width: 767px) {
+    margin-top: 25px;
+  }
+}
+
+.title {
+  font: {
+    size: 15px;
+  }
+}
+.sub-title {
+  font: {
+    size: 40px;
+  }
+}
+.p-deteils {
+  width: 40%;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  font: {
+    size: 15px;
+  }
+  @media only screen and (min-width: 200px) and (max-width: 767px) {
+    width: 90%;
+  }
+}

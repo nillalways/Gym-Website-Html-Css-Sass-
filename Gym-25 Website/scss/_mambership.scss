@@ -1,0 +1,56 @@
+// Utilities
+@use 'utilities' as *;
+
+// *************************************************
+
+// Mambership Area Style
+
+#Membership_area {
+  padding: 0 1%;
+  background: $blackColor;
+  margin-bottom: 17px;
+  .child_membership {
+    width: 300px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px 0px;
+    padding-top: 0;
+    text-align: center;
+    transition: border-color 0.5s ease;
+    margin-right: 10px;
+    flex-basis: 33%;
+    &:hover {
+      border: 1px solid;
+      border-color: $lemonYellow;
+    }
+    .price_details {
+      border-radius: 20px 20px 0 0;
+      padding: 20px;
+      padding-bottom: 0;
+      transition: 0.5s;
+      h3 {
+        font: {
+          size: 24px;
+        }
+      }
+      &:hover {
+        background: $lemonYellow;
+        color: $blackColor;
+      }
+    }
+    .Member_details {
+      text-align: left;
+      padding: 20px;
+      p {
+        font: {
+          size: 10px;
+        }
+      }
+    }
+    .buy_now_btn {
+      margin-top: 40px;
+    }
+  }
+}

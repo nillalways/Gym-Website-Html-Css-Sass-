@@ -1,0 +1,46 @@
+/* castom css use  */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ul {
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  display: flex;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.text-center {
+  text-align: center;
+}
+.inner_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  align-items: stretch;
+  justify-content: center;
+  gap: 14px;
+}
+.inner_grid_staff_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  align-items: stretch;
+  justify-content: center;
+  gap: 14px;
+}
+::selection {
+  background: #faff00;
+  color: black;
+}
